@@ -48,17 +48,13 @@ cp templates/CLAUDE-SPRINT-SECTION.md your-project/  # Or merge into existing CL
 
 ```
 claude-sprint-manager/
-├── README.md                 # This file
+├── README.md                     # This file
 ├── skills/
-│   ├── sprint-handoff.md     # Generates handoff prompts
-│   └── sprint-update.md      # End-of-sprint doc updates
-├── templates/
-│   ├── SPRINTS.md            # Full sprint tracking template
-│   └── CLAUDE-SPRINT-SECTION.md  # Sprint section for CLAUDE.md
-└── examples/
-    └── signalstream/         # Real-world example
-        ├── SPRINTS.md
-        └── CLAUDE.md
+│   ├── sprint-handoff.md         # Generates handoff prompts
+│   └── sprint-update.md          # End-of-sprint doc updates
+└── templates/
+    ├── SPRINTS.md                # Full sprint tracking template
+    └── CLAUDE-SPRINT-SECTION.md  # Sprint section for CLAUDE.md
 ```
 
 ## How It Works
