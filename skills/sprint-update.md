@@ -3,7 +3,7 @@ name: sprint-update
 description: End-of-sprint documentation update ritual
 ---
 
-Perform the end-of-sprint documentation update:
+Perform the end-of-sprint documentation update based on work completed in this conversation.
 
 ## Step 1: Read Current State
 
@@ -14,18 +14,19 @@ Read these files:
 If it exists, also read:
 - docs/PRODUCT-DECISIONS.md
 
-## Step 2: Review Sprint Progress
+## Step 2: Analyze Conversation Context
 
-Ask the user:
-1. "What tasks did we complete this sprint?"
-2. "Any new product/technical decisions to document?"
-3. "Any blockers or issues to note for next sprint?"
+Review the current conversation to identify:
+- Tasks completed this session
+- New product/technical decisions made
+- Any blockers encountered
+- Files created or modified
 
-Wait for user response before proceeding.
+Do NOT ask the user what was completed - you have full context from this conversation.
 
 ## Step 3: Update SPRINTS.md
 
-Based on user input:
+Based on conversation context:
 - Mark completed tasks with [x]
 - Move incomplete tasks to "In Progress" or "Up Next"
 - Add any new blockers with description
@@ -34,12 +35,12 @@ Based on user input:
 
 ## Step 4: Update PRODUCT-DECISIONS.md (if applicable)
 
-If user mentioned new decisions:
+If new decisions were made during this session:
 - Add them to the appropriate section
 - Include date and brief rationale
 - Keep format consistent with existing entries
 
-## Step 5: Generate New Handoff Prompt
+## Step 5: Update Handoff Prompt
 
 Update the "Current Handoff Prompt" section in SPRINTS.md with:
 - Current sprint number and status
@@ -47,7 +48,11 @@ Update the "Current Handoff Prompt" section in SPRINTS.md with:
 - Updated next steps
 - Any blockers noted
 
-## Step 6: Summary
+## Step 6: Update CLAUDE.md
+
+Update the sprint roadmap section to reflect current status.
+
+## Step 7: Summary
 
 Show the user a brief summary:
 - Files updated
